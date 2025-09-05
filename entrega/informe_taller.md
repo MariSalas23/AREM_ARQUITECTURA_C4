@@ -42,4 +42,4 @@ Describa en 2–3 párrafos lo investigado, citando fuentes cuando sea necesario
 
 ---
 
-_Este documento hace parte de la entrega del taller X del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._
+_Este documento hace parte de la entrega del taller C4 del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._
