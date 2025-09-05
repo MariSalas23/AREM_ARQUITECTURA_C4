@@ -27,7 +27,14 @@ Incluya un análisis sobre:
 
 | Nombre del elemento | Tipo | Descripción | Responsable |
 |---------------------|------|-------------|-------------|
-| Ej: Paciente        | Actor | Usuario que agenda una cita médica | Cliente |
+| Cliente        | Actor (Person) | Persona o empresa (ej. bancos, entidades de crédito) que consulta información y solicita scores. | Cliente |
+| Operador        | Actor (Person) | Personal interno encargado de crear clientes, gestionar usuarios y administrar la plataforma. | Zajana |
+| Fuente        | Actor (Software System Externo) | Sistemas externos que proveen información utilizada por Zajana (ej. registros, bases de datos). | Externo |
+| Página web        | Componente (Software System) | Interfaz que permite al cliente acceder al servicio, realizar consultas y recibir respuestas. | Zajana |
+| Portal de operaciones        | Componente (Software System) | Plataforma interna que usan los operadores para crear y administrar clientes y usuarios. | Zajana |
+| API de consulta cliente        | Componente (Software System) | Servicio que consolida los datos obtenidos y genera los scores analíticos que recibe el cliente. | Zajana |
+| API de fuentes       | Componente (Software System) | Conector entre ZAJANA y los sistemas externos (Fuentes) para obtener datos necesarios. | Zajana |
+| API de facturación       | Componente (Software System) | Registra el consumo de consultas y operaciones hechas en ZAJANA, base para facturación a clientes. | Zajana |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
