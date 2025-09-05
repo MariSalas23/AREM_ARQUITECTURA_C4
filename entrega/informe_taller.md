@@ -1,12 +1,12 @@
 # 📄 Informe Técnico del Taller
 
-## 🔖 Nombre del Taller
-_Taller X - [Nombre completo del taller]_
+## 🔖 ARQUITECTURA C4
+_Taller c4_
 
 ## 👥 Integrantes del equipo
-- Nombre 1 (correo o usuario GitHub)
-- Nombre 2
-- Nombre 3
+- Ana Lucía Quintero Vargas
+- Juan David Cetina Gómez
+- Mariana Salas Gutiérrez
 
 ## 🧠 Descripción general del trabajo
 Describa brevemente el objetivo del taller y cómo se desarrolló la actividad.
