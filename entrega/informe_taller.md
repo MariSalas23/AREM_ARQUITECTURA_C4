@@ -1,7 +1,7 @@
 # 📄 Informe Técnico del Taller
 
 ## 🔖 ARQUITECTURA C4
-_Taller c4_
+_Taller C4_
 
 ## 👥 Integrantes del equipo
 - Ana Lucía Quintero Vargas
