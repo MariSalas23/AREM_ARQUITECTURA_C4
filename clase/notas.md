@@ -1,7 +1,7 @@
 # 🗒️ Registro de Trabajo en Clase - Taller C4
 
 ## 📆 Fecha de la sesión
-06/09/2025
+_06/09/2025_
 
 ## 👥 Integrantes presentes
 - Ana Lucía Quintero Vargas
@@ -33,4 +33,4 @@ Anote las responsabilidades acordadas entre los miembros del equipo para complet
 
 ---
 
-_Este documento resume el trabajo colaborativo realizado durante la sesión del taller X en el curso AREM - Universidad de La Sabana._
+_Este documento resume el trabajo colaborativo realizado durante la sesión del taller C4 en el curso AREM - Universidad de La Sabana._
