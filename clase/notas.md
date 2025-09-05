@@ -1,12 +1,12 @@
-# 🗒️ Registro de Trabajo en Clase - Taller X
+# 🗒️ Registro de Trabajo en Clase - Taller C4
 
 ## 📆 Fecha de la sesión
-_Indique la fecha de la clase en que se trabajó este taller._
+06/09/2025
 
 ## 👥 Integrantes presentes
-- Nombre 1
-- Nombre 2
-- Nombre 3
+- Ana Lucía Quintero Vargas
+- Juan David Cetina Gómez
+- Mariana Salas Gutiérrez
 
 ## 🧠 Actividades realizadas en clase
 
