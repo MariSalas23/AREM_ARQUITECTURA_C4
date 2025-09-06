@@ -29,13 +29,13 @@ Incluya un análisis sobre:
 |---------------------|------|-------------|-------------|
 | Cliente        | Actor (Person) | Persona o empresa (ej. bancos, entidades de crédito) que consulta información y solicita scores. | Cliente |
 | Operador        | Actor (Person) | Personal interno encargado de crear clientes, gestionar usuarios y administrar la plataforma. | Zajana |
-| Fuente        | Componente (Software System Externo) | Sistemas externos que proveen información utilizada por Zajana (ej. registros, bases de datos). | Externo |
+| Fuente        | Componente (External Software System) | Sistemas externos que proveen información utilizada por Zajana (ej. registros, bases de datos). | Externo |
 | Página web        | Componente (Software System) | Interfaz que permite al cliente acceder al servicio, realizar consultas y recibir respuestas. | Zajana |
 | Portal de operaciones        | Componente (Software System) | Plataforma interna que usan los operadores para crear y administrar clientes y usuarios. | Zajana |
 | API de consulta cliente        | Componente (Software System) | SPunto de entrada para solicitudes de clientes hacia Zajana (consultas de scores, datos). | Zajana |
 | API de fuentes       | Componente (Software System) | Conector entre Zajana y los sistemas externos (Fuentes) para obtener datos necesarios. | Zajana |
 | API de facturación       | Componente (Software System) | Registra el consumo de consultas y operaciones hechas en Zajana, base para facturación a clientes. | Zajana |
-| API de respuesta       | Componente (Software System) | Servicio que consolida los datos obtenidos y genera los scores analíticos que recibe el cliente. | Zajana |
+| API de notificaciones | Componente (External Software System) | Servicio que envía notificaciones por correo a clientes, informando sobre la disponibilidad de scores, cambios en el estado de consultas o similares. | Externo |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
