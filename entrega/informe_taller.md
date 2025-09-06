@@ -1,7 +1,7 @@
 # 📄 Informe Técnico del Taller
 
 ## 🔖 ARQUITECTURA C4
-_Taller C4_
+_Taller 3 - Arquitectura Actual del Sistema con el Modelo C4_
 
 ## 👥 Integrantes del equipo
 - Juan David Cetina Gómez (juancego@unisabana.edu.co)
@@ -50,4 +50,4 @@ Describa en 2–3 párrafos lo investigado, citando fuentes cuando sea necesario
 
 ---
 
-_Este documento hace parte de la entrega del taller C4 del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._
+_Este documento hace parte de la entrega del taller 3 del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._

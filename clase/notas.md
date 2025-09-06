@@ -1,4 +1,4 @@
-# 🗒️ Registro de Trabajo en Clase - Taller C4
+# 🗒️ Registro de Trabajo en Clase - Taller 3
 
 ## 📆 Fecha de la sesión
 _30/08/2025_
@@ -34,4 +34,4 @@ Anote las responsabilidades acordadas entre los miembros del equipo para complet
 
 ---
 
-_Este documento resume el trabajo colaborativo realizado durante la sesión del taller C4 en el curso AREM - Universidad de La Sabana._
+_Este documento resume el trabajo colaborativo realizado durante la sesión del taller 3 en el curso AREM - Universidad de La Sabana._
