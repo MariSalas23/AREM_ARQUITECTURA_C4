@@ -4,9 +4,9 @@
 _Taller C4_
 
 ## 👥 Integrantes del equipo
-- Ana Lucía Quintero Vargas
-- Juan David Cetina Gómez
-- Mariana Salas Gutiérrez
+- Juan David Cetina Gómez (juancego@unisabana.edu.co)
+- Ana Lucía Quintero Vargas (anaquiva@unisabana.edu.co)
+- Mariana Salas Gutiérrez (marianasalgu@unisabana.edu.co)
 
 ## 🧠 Descripción general del trabajo
 Describa brevemente el objetivo del taller y cómo se desarrolló la actividad.
