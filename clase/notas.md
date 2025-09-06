@@ -1,16 +1,16 @@
 # 🗒️ Registro de Trabajo en Clase - Taller C4
 
 ## 📆 Fecha de la sesión
-_06/09/2025_
+_30/08/2025_
 
 ## 👥 Integrantes presentes
-- Ana Lucía Quintero Vargas
 - Juan David Cetina Gómez
+- Ana Lucía Quintero Vargas
 - Mariana Salas Gutiérrez
 
 ## 🧠 Actividades realizadas en clase
 
-Describa brevemente qué se hizo durante la sesión:
+Durante una corta parte de la sesión el grupo se enfocó en organizar la forma de trabajo y distribuir las responsabilidades entre los integrantes del equipo. Engeneral, se alcanzó a revisar el caso de referencia de la plataforma de logística de RedExpress y a discutir los elementos que se debían representar en los diagramas de las vistas C1 (contexto) y C2 (contenedores), para que según los roles de cada persona se continue con la actividad fuera del aula.
 
 - ¿Qué se discutió con el equipo?
 - ¿Qué decisiones de modelado se tomaron?
@@ -19,7 +19,7 @@ Describa brevemente qué se hizo durante la sesión:
 
 ## 🧩 Boceto inicial del modelo
 
-> (Puede insertar aquí una imagen del boceto, una captura de pantalla o un diagrama preliminar si ya fue hecho en digital)
+![Vista C1 borraodr](./c1-contexto-borrador.drawio.png)
 
 ## 🔁 Tareas definidas para complementar el taller
 
