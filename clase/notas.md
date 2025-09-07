@@ -38,7 +38,7 @@ Anote las responsabilidades acordadas entre los miembros del equipo para complet
 
 | Tarea asignada | Responsable | Fecha estimada |
 |----------------|-------------|----------------|
-| Creación del archivo darw.io | Ana Lucía Quintero Vargas | 30/08 |
+| Creación del archivo draw.io | Ana Lucía Quintero Vargas | 30/08 |
 | Modelado final en draw.io | Mariana Salas Gutiérrez y Ana Lucía Quintero Vargas | 02/09 |
 | Redacción del informe     | Mariana Salas Gutiérrez | 06/09 |
 | Redacción de notas     | Juan David Cetina Gómez | 06/09 |
