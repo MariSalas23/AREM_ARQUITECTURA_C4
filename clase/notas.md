@@ -19,7 +19,7 @@ Durante una corta parte de la sesión el grupo se enfocó en organizar la forma 
 
 ## 🧩 Boceto inicial del modelo
 
-![Vista C1 borraodr](./c1-contexto-borrador.drawio.png)
+![Vista C1 borrador](./c1-contexto-borrador.drawio.jpg)
 
 ## 🔁 Tareas definidas para complementar el taller
 
