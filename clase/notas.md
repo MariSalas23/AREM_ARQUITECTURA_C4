@@ -10,7 +10,7 @@ _30/08/2025_
 
 ## 🧠 Actividades realizadas en clase
 
-Durante una corta parte de la sesión el grupo se enfocó en organizar la forma de trabajo y distribuir las responsabilidades entre los integrantes del equipo. Engeneral, se alcanzó a revisar el caso de referencia de la plataforma de logística de RedExpress y a discutir los elementos que se debían representar en los diagramas de las vistas C1 (contexto) y C2 (contenedores), para que según los roles de cada persona se continue con la actividad fuera del aula.
+Durante una corta parte de la sesión el grupo se enfocó en organizar la forma de trabajo y distribuir las responsabilidades entre los integrantes del equipo. En general, se alcanzó a revisar el caso de referencia de la plataforma de logística de RedExpress y a discutir los elementos que se debían representar en los diagramas de las vistas C1 (contexto) y C2 (contenedores), para que según los roles de cada persona se continue con la actividad fuera del aula.
 
 - *¿Qué se discutió con el equipo?*
   
