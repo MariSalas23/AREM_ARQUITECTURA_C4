@@ -50,7 +50,9 @@ Esta comparación presentada puede ayudar a entender el enfoque del taller. Mien
 ## 📚 Referencias
 
 [1] S. Kotusev, “TOGAF-based Enterprise Architecture Practice: An Exploratory Case Study,” Communications of the Association for Information Systems, vol. 43, no. 20, Sept. 2018.
+
 [2] S. Kotusev, “The critical scrutiny of TOGAF,” BCS, The Chartered Institute for IT, Apr. 2016. [En línea]. 
+
 [3] J. Wasielewski, “The C4 Model in Enterprise Architecture explained,” ValueBlue, Abr. 2025. [En línea]. 
 
 _Este documento hace parte de la entrega del taller 3 del curso AREM (Arquitectura Empresarial) - Universidad de La Sabana._
