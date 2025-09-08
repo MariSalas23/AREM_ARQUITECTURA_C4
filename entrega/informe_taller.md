@@ -18,34 +18,34 @@ El trabajo se llevó a cabo de manera colaborativa utilizando la herramienta dra
 
 - *¿Cómo se estructura el modelo entregado?* 
 
-El modelo C1 (diagrama de contexto) se estructura de la siguiente manera:
+    - El modelo C1 (diagrama de contexto) se estructura de la siguiente manera:
 
-- **Actores:** Cliente, Operador, Encargado del CRM.  
-    - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.  
-    - **Sistemas internos:** Portal de operaciones, página web, APIs (consulta clientes, facturación de consulta cliente y de respuesta). 
-    - **Relaciones clave:**  
-    - Cliente → Consulta y recibe scores.  
-    - Operador → Administra usuarios y permisos.  
-    - CRM → Centraliza información comercial.  
-    - Fuentes → Entregan datos externos.  
-    - Notificaciones → Informan eventos al cliente.  
+        - **Actores:** Cliente, Operador, Encargado del CRM.  
+        - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.  
+        - **Sistemas internos:** Portal de operaciones, página web, APIs (consulta clientes, facturación de consulta cliente y de respuesta). 
+        - **Relaciones clave:**  
+            - Cliente → Consulta y recibe scores.  
+            - Operador → Administra usuarios y permisos.  
+            - CRM → Centraliza información comercial.  
+            - Fuentes → Entregan datos externos.  
+            - Notificaciones → Informan eventos al cliente.  
 
-El modelo C2 (diagrama de contenedores) se estructura de la siguiente manera:
+    - El modelo C2 (diagrama de contenedores) se estructura de la siguiente manera:
 
-- **Actores:** Cliente, Operador, Encargado del CRM. 
-    - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.
-    - **Frontend (ASP.NET MVC)** + **Contenido estático (HTML, CSS, JS):** Interfaz para clientes.  
-    - **API Gateway (Azure API Management):** Autenticación, enrutamiento, control de acceso.  
-    - **Backend (ASP.NET Web API):** Lógica de negocio, integración de datos externos, orquestación de procesos.  
-    - **Bases de datos:**  
-        - **Base de datos relacional (SQL):** Información de clientes, sus consultas y respuestas.  
-        - **Base de datos no relacional (Cosmos DB):** Información de resultados detallados de consultas (JSON).  
-    - **Infraestructura de soporte:**  
-        - Balanceador de carga (Azure Traffic Manager).  
-        - Observabilidad (Azure Monitor / App Insights).  
-        - Sistema de notificaciones (SendGrid u otro).  
-        - Portal de operaciones (gestión interna).  
-        - Integración con CRM (Dynamics 365).  
+        - **Actores:** Cliente, Operador, Encargado del CRM. 
+        - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.
+        - **Frontend (ASP.NET MVC)** + **Contenido estático (HTML, CSS, JS):** Interfaz para clientes.  
+        - **API Gateway (Azure API Management):** Autenticación, enrutamiento, control de acceso.  
+        - **Backend (ASP.NET Web API):** Lógica de negocio, integración de datos externos, orquestación de procesos.  
+        - **Bases de datos:**  
+            - **Base de datos relacional (SQL):** Información de clientes, sus consultas y respuestas.  
+            - **Base de datos no relacional (Cosmos DB):** Información de resultados detallados de consultas (JSON).  
+        - **Infraestructura de soporte:**  
+            - Balanceador de carga (Azure Traffic Manager).  
+            - Observabilidad (Azure Monitor / App Insights).  
+            - Sistema de notificaciones (SendGrid u otro).  
+            - Portal de operaciones (gestión interna).  
+            - Integración con CRM (Dynamics 365).  
 
 - *¿Cómo representa las necesidades del cliente?*
 
@@ -55,9 +55,7 @@ Además, se evidencia como se usan diversas herramientas de Microsoft que podrí
 
 - *¿Qué supuestos se tomaron?*
 
-Para el caso de Zajana se tomaron los siguientes supuestos:
-
-- Se asume que se usa autenticación vía OAuth2/OIDC con JWT.  
+    - Se asume que se usa autenticación vía OAuth2/OIDC con JWT.  
     - Se asume que App Insights con trazabilidad distribuida.  
     - Se asume el cumplimiento de ISO 2700 y Habeas Data cuando aplique.  
     - Se asume la disponibilidad y autorización de las fuentes externas.
