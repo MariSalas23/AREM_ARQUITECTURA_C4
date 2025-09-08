@@ -22,7 +22,7 @@ Incluya un análisis sobre:
 
 ## 📈 Diagrama final entregado
 ![Vista C1 Final](./c1-contexto-final.drawio.jpeg)
-![Vista C2 Final](./c1-contexto-final.drawio.jpg)
+![Vista C2 Final](./c2-contenedores-final.drawio.jpg)
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
 
