@@ -21,21 +21,46 @@ Incluya un análisis sobre:
 - Qué supuestos se tomaron
 
 ## 📈 Diagrama final entregado
-> (Inserte aquí una imagen o enlace al modelo-final.drawio / .asta / PDF)
+![Vista C1 Final](./c1-contexto-final.drawio.jpeg)
+![Vista C2 Final](./c1-contexto-final.drawio.jpg)
 
 ## 📋 Tabla de actores, entidades o componentes (si aplica)
 
-| Nombre del elemento | Tipo | Descripción | Responsable |
+La tabla para C1 aplicado a Zajana SAS es la siguiente:
+
+| **Nombre del elemento** | **Tipo** | **Descripción** | **Responsable** |
 |---------------------|------|-------------|-------------|
-| Cliente        | Actor (Person) | Persona o empresa (ej. bancos, entidades de crédito) que consulta información y solicita scores. | Cliente |
-| Operador        | Actor (Person) | Personal interno encargado de crear clientes, gestionar usuarios y administrar la plataforma. | Zajana |
-| Fuente        | Componente (External Software System) | Sistemas externos que proveen información utilizada por Zajana (ej. registros, bases de datos). | Externo |
-| Página web        | Componente (Software System) | Interfaz que permite al cliente acceder al servicio, realizar consultas y recibir respuestas. | Zajana |
-| Portal de operaciones        | Componente (Software System) | Plataforma interna que usan los operadores para crear y administrar clientes y usuarios. | Zajana |
-| API de consulta cliente        | Componente (Software System) | SPunto de entrada para solicitudes de clientes hacia Zajana (consultas de scores, datos). | Zajana |
-| API de fuentes       | Componente (Software System) | Conector entre Zajana y los sistemas externos (Fuentes) para obtener datos necesarios. | Zajana |
-| API de facturación       | Componente (Software System) | Registra el consumo de consultas y operaciones hechas en Zajana, base para facturación a clientes. | Zajana |
-| API de notificaciones | Componente (External Software System) | Servicio que envía notificaciones por correo a clientes, informando sobre la disponibilidad de scores, cambios en el estado de consultas o similares. | Externo |
+| **Cliente**        | Actor (Person) | Persona o empresa (ej. bancos, entidades de crédito) que consulta información y solicita scores. | Cliente |
+| **Operador**        | Actor (Person) | Personal interno encargado de crear clientes, gestionar usuarios y administrar la plataforma. | Zajana |
+| **Encargado del CRM**        | Actor (Person) | Persona encargada de que el CRM apoye los procesos de ventas, marketing y servicio al cliente. | Zajana |
+| **Fuente**        | Componente (External Software System) | Sistemas externos que proveen información utilizada por Zajana (ej. registros, bases de datos). | Externo |
+| **Página web**        | Componente (Software System) | Interfaz que permite al cliente acceder al servicio, realizar consultas y recibir respuestas. | Zajana |
+| **Portal de operaciones**        | Componente (Software System) | Plataforma interna que usan los operadores para crear y administrar clientes y usuarios. | Zajana |
+| **API de consulta cliente**        | Componente (Software System) | SPunto de entrada para solicitudes de clientes hacia Zajana (consultas de scores, datos). | Zajana |
+| **API de fuentes**       | Componente (Software System) | Conector entre Zajana y los sistemas externos (Fuentes) para obtener datos necesarios. | Zajana |
+| **API de facturación**       | Componente (Software System) | Registra el consumo de consultas y operaciones hechas en Zajana, base para facturación a clientes. | Zajana |
+| **Sistema de notificaciones** | Componente (External Software System) | Servicio que envía notificaciones por correo a clientes, informando sobre la disponibilidad de scores, cambios en el estado de consultas o similares. | Externo |
+| **CRM (Microsoft Dynamics 365)** | Componente (External Software System) | Sistema de gestión de relaciones con clientes que centraliza información comercial, contratos y oportunidades de negocio. | Externo |
+
+La tabla para C2 aplicado a Zajana SAS es la siguiente:
+
+| **Nombre del elemento** | **Tipo** | **Descripción** | **Responsable** |
+|---------------------|------|-------------|-------------|
+| **Cliente**        | Actor (Person) | Persona o empresa (ej. bancos, entidades de crédito) que consulta información y solicita scores. | Cliente |
+| **Operador**        | Actor (Person) | Personal interno encargado de crear clientes, gestionar usuarios y administrar la plataforma. | Zajana |
+| **Encargado del CRM**        | Actor (Person) | Persona encargada de que el CRM apoye los procesos de ventas, marketing y servicio al cliente. | Zajana |
+| **Frontend**               | Contenedor (ASP.NET MVC) | Interfaz web para clientes, sirve vistas y comunica solicitudes al API Gateway. | Zajana |
+| **Contenido estático**     | Contenedor (HTML, CSS, JS) | Sirve recursos estáticos (HTML, CSS, JS) para la renderización de la interfaz web. | Zajana |
+| **Balanceador de carga**   | Componente (Azure Traffic Manager) | Distribuye el tráfico HTTP/HTTPS entre las instancias del Frontend para alta disponibilidad. | Azure (Externo) |
+| **API Gateway**            | Contenedor (Azure API Management) | Expone y protege las APIs, aplicando autenticación, control de acceso y enrutamiento hacia el Backend. | Zajana / Azure |
+| **Backend**                | Contenedor (ASP.NET Web API) | Implementa la lógica de negocio, procesa solicitudes, integra datos externos y accede a las bases de datos. | Zajana |
+| **Base de datos relacional** | Contenedor (SQL Database) | Almacena información estructurada: clientes, consultas y respuestas. | Zajana |
+| **Base de datos no relacional** | Contenedor (Cosmos DB) | Almacena información detallada de las consultas en formato flexible (JSON). | Zajana |
+| **Portal de operaciones**  | Contenedor (Web App interna) | Herramienta interna para que operadores gestionen clientes, usuarios y credenciales. | Zajana |
+| **CRM (Microsoft Dynamics 365)** | Sistema externo | Gestiona relaciones comerciales, contratos y oportunidades de negocio. | Microsoft / Zajana (uso) |
+| **Sistema de notificaciones** | Sistema externo | Envía correos y alertas automáticas a clientes (ej. SendGrid). | Externo |
+| **Sistema de observabilidad** | Sistema externo (Azure Monitor / App Insights) | Recolecta métricas, logs y trazas de Frontend, Backend y APIs para análisis y monitoreo. | Azure |
+| **Fuente externa de datos** | Sistema externo | Sistemas externos que entregan datos usados en los procesos de análisis y scoring. | Externo |
 
 ## 🔍 Investigación complementaria
 ### Tema investigado:
