@@ -19,7 +19,8 @@ El trabajo se llevó a cabo de manera colaborativa utilizando la herramienta dra
 - *¿Cómo se estructura el modelo entregado?* 
 
 El modelo C1 (diagrama de contexto) se estructura de la siguiente manera:
-    - **Actores:** Cliente, Operador, Encargado del CRM.  
+
+- **Actores:** Cliente, Operador, Encargado del CRM.  
     - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.  
     - **Sistemas internos:** Portal de operaciones, página web, APIs (consulta clientes, facturación de consulta cliente y de respuesta). 
     - **Relaciones clave:**  
@@ -30,7 +31,8 @@ El modelo C1 (diagrama de contexto) se estructura de la siguiente manera:
     - Notificaciones → Informan eventos al cliente.  
 
 El modelo C2 (diagrama de contenedores) se estructura de la siguiente manera:
-    - **Actores:** Cliente, Operador, Encargado del CRM. 
+
+- **Actores:** Cliente, Operador, Encargado del CRM. 
     - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.
     - **Frontend (ASP.NET MVC)** + **Contenido estático (HTML, CSS, JS):** Interfaz para clientes.  
     - **API Gateway (Azure API Management):** Autenticación, enrutamiento, control de acceso.  
@@ -46,6 +48,7 @@ El modelo C2 (diagrama de contenedores) se estructura de la siguiente manera:
         - Integración con CRM (Dynamics 365).  
 
 - *¿Cómo representa las necesidades del cliente?*
+
 Los diagramas de C1 y C2 representan las necesidades del cliente al mostrar cómo la arquitectura de Zajana busca generar eficiencias operativas y administrativas mediante la centralización de procesos clave. En C1, el Portal de operaciones, el CRM y la API de facturación conectan directamente la gestión de usuarios, clientes y contratos con la administración financiera. En C2, la inclusión del API Gateway, la base de datos relacional y el sistema de observabilidad refleja la estandarización de procesos, la trazabilidad de operaciones y el control centralizado, elementos que reducen duplicidades y mejoran la coordinación entre áreas técnicas y de negocio. 
 
 Además, se evidencia como se usan diversas herramientas de Microsoft que podrían verse centralizadas para reducir costos. Adicionalmente, es importante mencionar que se evidencia como hay distintas áreas involucradas en el funcionamiento del producto, representando la necesidad de la alineación entre las áreas de producto y desarrollo de software para el producto de Macia.
@@ -53,7 +56,8 @@ Además, se evidencia como se usan diversas herramientas de Microsoft que podrí
 - *¿Qué supuestos se tomaron?*
 
 Para el caso de Zajana se tomaron los siguientes supuestos:
-    - Se asume que se usa autenticación vía OAuth2/OIDC con JWT.  
+
+- Se asume que se usa autenticación vía OAuth2/OIDC con JWT.  
     - Se asume que App Insights con trazabilidad distribuida.  
     - Se asume el cumplimiento de ISO 2700 y Habeas Data cuando aplique.  
     - Se asume la disponibilidad y autorización de las fuentes externas.
@@ -91,15 +95,15 @@ La tabla para C2 aplicado a Zajana SAS es la siguiente:
 | **Encargado del CRM**        | Actor (Person) | Persona encargada de que el CRM apoye los procesos de ventas, marketing y servicio al cliente. | Zajana |
 | **Frontend**               | Contenedor (ASP.NET MVC) | Interfaz web para clientes, sirve vistas y comunica solicitudes al API Gateway. | Zajana |
 | **Contenido estático**     | Contenedor (HTML, CSS, JS) | Sirve recursos estáticos (HTML, CSS, JS) para la renderización de la interfaz web. | Zajana |
-| **Balanceador de carga**   | Componente (Azure Traffic Manager) | Distribuye el tráfico HTTP/HTTPS entre las instancias del Frontend para alta disponibilidad. | Azure (Externo) |
-| **API Gateway**            | Contenedor (Azure API Management) | Expone y protege las APIs, aplicando autenticación, control de acceso y enrutamiento hacia el Backend. | Zajana / Azure |
+| **Balanceador de carga**   | Componente (Azure Traffic Manager) | Distribuye el tráfico HTTP/HTTPS entre las instancias del Frontend para alta disponibilidad. | Azure |
+| **API Gateway**            | Contenedor (Azure API Management) | Expone y protege las APIs, aplicando autenticación, control de acceso y enrutamiento hacia el Backend. | Azure |
 | **Backend**                | Contenedor (ASP.NET Web API) | Implementa la lógica de negocio, procesa solicitudes, integra datos externos y accede a las bases de datos. | Zajana |
 | **Base de datos relacional** | Contenedor (SQL Database) | Almacena información estructurada: clientes, consultas y respuestas. | Zajana |
 | **Base de datos no relacional** | Contenedor (Cosmos DB) | Almacena información detallada de las consultas en formato flexible (JSON). | Zajana |
 | **Portal de operaciones**  | Contenedor (Web App interna) | Herramienta interna para que operadores gestionen clientes, usuarios y credenciales. | Zajana |
-| **CRM (Microsoft Dynamics 365)** | Sistema externo | Gestiona relaciones comerciales, contratos y oportunidades de negocio. | Microsoft / Zajana (uso) |
+| **CRM (Microsoft Dynamics 365)** | Sistema externo | Gestiona relaciones comerciales, contratos y oportunidades de negocio. | Externo |
 | **Sistema de notificaciones** | Sistema externo | Envía correos y alertas automáticas a clientes (ej. SendGrid). | Externo |
-| **Sistema de observabilidad** | Sistema externo (Azure Monitor / App Insights) | Recolecta métricas, logs y trazas de Frontend, Backend y APIs para análisis y monitoreo. | Azure |
+| **Sistema de observabilidad** | Sistema externo (Azure Monitor / App Insights) | Recolecta métricas, logs y trazas de Frontend, Backend y APIs para análisis y monitoreo. | Externo |
 | **Fuente externa de datos** | Sistema externo | Sistemas externos que entregan datos usados en los procesos de análisis y scoring. | Externo |
 
 ## 🔍 Investigación complementaria
