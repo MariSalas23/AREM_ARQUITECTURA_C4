@@ -15,12 +15,52 @@ El taller tuvo como propósito aprender y aplicar el modelo C4, trabajando inici
 El trabajo se llevó a cabo de manera colaborativa utilizando la herramienta draw.io, que permitió a los integrantes aportar y realizar ajustes en tiempo real. La primera decisión fue modelar a los actores principales y, a partir de ellos, identificar los sistemas involucrados para construir el diagrama de contexto (C1). Posteriormente, tomando como base esa estructura inicial, se avanzó en el diagrama de contenedores (C2), donde se incluyeron sistemas externos, contenedores internos, bases de datos y otros componentes necesarios para delimitar el sistema. A lo largo del proceso, la información fue ajustada conforme se recibían aclaraciones del contacto de la empresa, lo que permitió que los diagramas reflejaran de manera más fiel la arquitectura actual del sistema.
 
 ## 🧩 Análisis del modelo propuesto
-Incluya un análisis sobre:
-- Cómo se estructura el modelo entregado
-- Cómo representa las necesidades del cliente
-- Qué supuestos se tomaron
 
-## 📈 Diagrama final entregado
+- *¿Cómo se estructura el modelo entregado?* 
+
+El modelo C1 (diagrama de contexto) se estructura de la siguiente manera:
+    - **Actores:** Cliente, Operador, Encargado del CRM.  
+    - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.  
+    - **Sistemas internos:** Portal de operaciones, página web, APIs (consulta clientes, facturación de consulta cliente y de respuesta). 
+    - **Relaciones clave:**  
+    - Cliente → Consulta y recibe scores.  
+    - Operador → Administra usuarios y permisos.  
+    - CRM → Centraliza información comercial.  
+    - Fuentes → Entregan datos externos.  
+    - Notificaciones → Informan eventos al cliente.  
+
+El modelo C2 (diagrama de contenedores) se estructura de la siguiente manera:
+    - **Actores:** Cliente, Operador, Encargado del CRM. 
+    - **Sistemas externos:** Microsoft Dynamics 365 (CRM), fuentes de datos, sistema de notificaciones.
+    - **Frontend (ASP.NET MVC)** + **Contenido estático (HTML, CSS, JS):** Interfaz para clientes.  
+    - **API Gateway (Azure API Management):** Autenticación, enrutamiento, control de acceso.  
+    - **Backend (ASP.NET Web API):** Lógica de negocio, integración de datos externos, orquestación de procesos.  
+    - **Bases de datos:**  
+        - **Base de datos relacional (SQL):** Información de clientes, sus consultas y respuestas.  
+        - **Base de datos no relacional (Cosmos DB):** Información de resultados detallados de consultas (JSON).  
+    - **Infraestructura de soporte:**  
+        - Balanceador de carga (Azure Traffic Manager).  
+        - Observabilidad (Azure Monitor / App Insights).  
+        - Sistema de notificaciones (SendGrid u otro).  
+        - Portal de operaciones (gestión interna).  
+        - Integración con CRM (Dynamics 365).  
+
+- *¿Cómo representa las necesidades del cliente?*
+Los diagramas de C1 y C2 representan las necesidades del cliente al mostrar cómo la arquitectura de Zajana busca generar eficiencias operativas y administrativas mediante la centralización de procesos clave. En C1, el Portal de operaciones, el CRM y la API de facturación conectan directamente la gestión de usuarios, clientes y contratos con la administración financiera. En C2, la inclusión del API Gateway, la base de datos relacional y el sistema de observabilidad refleja la estandarización de procesos, la trazabilidad de operaciones y el control centralizado, elementos que reducen duplicidades y mejoran la coordinación entre áreas técnicas y de negocio. 
+
+Además, se evidencia como se usan diversas herramientas de Microsoft que podrían verse centralizadas para reducir costos. Adicionalmente, es importante mencionar que se evidencia como hay distintas áreas involucradas en el funcionamiento del producto, representando la necesidad de la alineación entre las áreas de producto y desarrollo de software para el producto de Macia.
+
+- *¿Qué supuestos se tomaron?*
+
+Para el caso de Zajana se tomaron los siguientes supuestos:
+    - Se asume que se usa autenticación vía OAuth2/OIDC con JWT.  
+    - Se asume que App Insights con trazabilidad distribuida.  
+    - Se asume el cumplimiento de ISO 2700 y Habeas Data cuando aplique.  
+    - Se asume la disponibilidad y autorización de las fuentes externas.
+    - Se asume que proveedores como SendGrid (notificaciones) y Azure (cloud) mantendrán sus servicios con SLA estables durante todo el ciclo de vida.
+    - Se asume que la seguridad será gestionada con Sentinel y Defender, y la gobernanza de datos con Purview, como servicios transversales de Azure.
+
+## 📈 Diagramas finales entregados
 ![Vista C1 Final](./c1-contexto-final.drawio.jpeg)
 ![Vista C2 Final](./c2-contenedores-final.drawio.jpg)
 
